@@ -12,4 +12,4 @@ ES6  refers to the fundamental features introduced in ECMAScript 2015 (ES6), a m
 <li>Classes: A more intuitive way to create objects and implement inheritance.</li>
 <li>Modules: A standardized way to organize and share code between files.</li>
 </ol>
-These features significantly improved JavaScript's syntax and capabilities, making the language more powerful and easier to use. Would you like more details on any specific feature? CopyRetry
+These features significantly improved JavaScript's syntax and capabilities, making the language more powerful and easier to use.
