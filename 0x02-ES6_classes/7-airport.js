@@ -9,9 +9,6 @@ export default class Airport {
   }
 
   set name(value) {
-    if (typeof value !== 'string') {
-      throw new TypeError('name must be a string');
-    }
     this._name = value;
   }
 
@@ -20,19 +17,10 @@ export default class Airport {
   }
 
   set code(value) {
-    if (typeof value !== 'string') {
-      throw new TypeError('code must be a string');
-    }
     this._code = value;
   }
 
-  toString() {
+  get [Symbol.toStringTag]() {
     return this._code;
-  }
-
-  [Symbol.toPrimitive](hint) {
-    if (hint === 'string') {
-      return this._code;
-    }
   }
 }
