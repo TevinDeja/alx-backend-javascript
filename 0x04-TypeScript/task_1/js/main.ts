@@ -8,31 +8,31 @@ interface Teacher {
 }
 
 const teacher1: Teacher = {
-  firstName: "John",
-  lastName: "Doe",
+  firstName: "Kevin",
+  lastName: "Koech",
   fullTimeEmployee: true,
-  location: "London",
+  location: "Thika",
   contract: false,
 };
 
 console.log(teacher1);
 
 const teacher2: Teacher = {
-  firstName: "Jane",
-  lastName: "Smith",
+  firstName: "Joy",
+  lastName: "Chep",
   fullTimeEmployee: false,
   yearsOfExperience: 5,
-  location: "New York",
+  location: "Eldoret",
   masters: true,
 };
 
 console.log(teacher2);
 
 const teacher3: Teacher = {
-  firstName: 'John',
+  firstName: 'Elly',
   fullTimeEmployee: false,
-  lastName: 'Doe',
-  location: 'London',
+  lastName: 'Munene',
+  location: 'Kasarani',
   contract: false,
 };
 
@@ -43,9 +43,9 @@ interface Directors extends Teacher {
 }
 
 const director1: Directors = {
-  firstName: 'John',
-  lastName: 'Doe',
-  location: 'London',
+  firstName: 'Tevin',
+  lastName: 'Owen',
+  location: 'Kisumu',
   fullTimeEmployee: true,
   numberOfReports: 17,
 };
@@ -62,7 +62,7 @@ const printTeacher: printTeacherFunction = (firstName, lastName) => {
   return fullname;
 };
 
-console.log(printTeacher("John", "Doe"));
+console.log(printTeacher("Joy", "Chep"));
 
 interface StudentConstructor {
   firstName: string;
@@ -92,6 +92,6 @@ class StudentClass implements StudentClassInterface {
   }
 }
 
-const student = new StudentClass({ firstName: "Alice", lastName: "Smith" });
+const student = new StudentClass({ firstName: "Alice", lastName: "Davies" });
 console.log(student.workOnHomework());
 console.log(student.displayName());
