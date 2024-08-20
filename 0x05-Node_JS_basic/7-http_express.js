@@ -1,7 +1,6 @@
 const express = require('express');
 const fs = require('fs');
 
-
 function countStudents(path) {
   return new Promise((resolve, reject) => {
     fs.readFile(path, { encoding: 'utf-8' }, (err, data) => {
